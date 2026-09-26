@@ -264,13 +264,15 @@ img {
 
 .portada__foto {
   display: block;
-  width: 260px;
+  width: clamp(260px, 20vw, 320px);
   max-width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
-  border-radius: 18px;
+  border-radius: 20px;
   border: 1px solid var(--borde);
-  box-shadow: var(--sombra);
+  box-shadow:
+    0 2px 4px rgba(34, 54, 74, 0.06),
+    0 22px 44px -18px rgba(34, 54, 74, 0.24);
   background: var(--panel);
 }
 
@@ -647,13 +649,14 @@ img {
 }
 
 .pie__cuerpo {
-  padding-block: clamp(2.5rem, 6vw, 3.5rem);
+  padding-block: clamp(3.5rem, 6vw, 7.4rem);
 }
 
 .pie__rejilla {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+  justify-content: space-between;
   align-items: start;
 }
 
@@ -673,10 +676,6 @@ img {
   color: var(--sutil);
   font-size: 0.875rem;
   margin-bottom: 0;
-}
-
-.pie__grupo + .pie__grupo {
-  margin-top: 1.5rem;
 }
 
 .pie__etiqueta {
@@ -720,7 +719,7 @@ img {
   border-top: 1px solid var(--borde);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 0.5rem 1.5rem;
   padding-block: 1.25rem;
 }
@@ -780,11 +779,11 @@ img {
   }
 
   .portada__foto {
-    width: 160px;
+    width: 200px;
   }
 
   .pie__rejilla {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 }
 
