@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F3F6F9"/>
+      <stop offset="1" stop-color="#E7ECF2"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" fill="url(#fondo)"/>
+  <g fill="none" stroke="#BFCAD6" stroke-width="14" stroke-linecap="round">
+    <circle cx="320" cy="258" r="86"/>
+    <path d="M172 470c0-70 66-118 148-118s148 48 148 118"/>
+  </g>
+  <text x="320" y="578" text-anchor="middle"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="21" font-weight="600" letter-spacing="4" fill="#A9B6C3">FOTOGRAFIA PENDIENTE</text>
+</svg>

@@ -1,0 +1,15 @@
+# Ruido del sistema de archivos de macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Documentos de trabajo que no se publican.
+# El reporte de caso de ejemplo queda fuera del sitio hasta que se confirme
+# que los nombres de autor, tutor e institucion son ficticios y que no hay
+# datos identificables del paciente.
+/*.docx
+
+# Artefactos temporales
+*.tmp
+*.log
